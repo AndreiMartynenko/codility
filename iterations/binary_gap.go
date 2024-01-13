@@ -55,9 +55,11 @@ func Solution(N int) int {
 	}
 
 	return maxGap
+/*
 }
 
 func main() {
 	fmt.Println(Solution(1041)) // Output: 5
 	fmt.Println(Solution(32))   // Output: 0
 }
+*/
