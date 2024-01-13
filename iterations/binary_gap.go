@@ -110,10 +110,4 @@ The function `Solution(N)` needs to return the length of the longest binary gap 
 - **Test Cases:**
   Test your solution with various test cases, including cases with multiple binary gaps, no gaps, and the largest possible input.
 
-- **Readability:**
-  Write clear and readable code. Use meaningful variable names and comments to explain your logic.
-
-By following these steps and advice, you can develop an efficient and correct solution for finding the length of the longest binary gap.
-
-
 */
