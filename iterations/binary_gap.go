@@ -62,4 +62,58 @@ func main() {
 	fmt.Println(Solution(1041)) // Output: 5
 	fmt.Println(Solution(32))   // Output: 0
 }
+
+### Task Description:
+
+The task is to find the length of the longest binary gap in the binary representation of a positive integer `N`. A binary gap is defined as a maximal sequence of consecutive zeros surrounded by ones at both ends in the binary representation.
+
+For example:
+- The binary representation of 9 is 1001, and it contains a binary gap of length 2.
+- The binary representation of 529 is 1000010001, containing two binary gaps of lengths 4 and 3.
+
+The function `Solution(N)` needs to return the length of the longest binary gap for a given positive integer `N`. If there are no binary gaps, it should return 0.
+
+### Approach:
+
+1. **Convert to Binary:**
+   - Start by converting the given integer `N` into its binary representation. This can be done using standard functions provided by the programming language you are using. In the Go solution, `strconv.FormatInt` is used.
+
+2. **Iterate Through Binary Digits:**
+   - Once you have the binary representation, iterate through each binary digit.
+
+3. **Track Gaps:**
+   - Keep track of the current binary gap length and the maximum gap length encountered so far.
+
+4. **Counting Zeros:**
+   - When you encounter a '1', check if you were already counting zeros. If yes, update the maximum gap length if the current gap is greater. Reset the current gap length to zero.
+
+5. **Continue Counting:**
+   - If the digit is '0' and you are already counting zeros, increment the current gap length.
+
+6. **Return Result:**
+   - After iterating through all digits, return the length of the longest binary gap.
+
+### Advice:
+
+- **Understand the Binary Representation:**
+  Ensure you understand how to convert an integer to its binary representation and vice versa. Familiarize yourself with bitwise operations if needed.
+
+- **Iterative Approach:**
+  Consider an iterative approach to go through each binary digit one by one. Track the state of whether you are currently counting zeros or not.
+
+- **Edge Cases:**
+  Handle edge cases carefully. For instance, consider what happens when there are no binary gaps.
+
+- **Efficiency:**
+  Aim for an efficient solution. The given constraints indicate that the integer `N` can be as large as 2,147,483,647, so the solution should be able to handle large inputs efficiently.
+
+- **Test Cases:**
+  Test your solution with various test cases, including cases with multiple binary gaps, no gaps, and the largest possible input.
+
+- **Readability:**
+  Write clear and readable code. Use meaningful variable names and comments to explain your logic.
+
+By following these steps and advice, you can develop an efficient and correct solution for finding the length of the longest binary gap.
+
+
 */
