@@ -105,9 +105,13 @@ The function `Solution(N)` needs to return the length of the longest binary gap 
   Handle edge cases carefully. For instance, consider what happens when there are no binary gaps.
 
 - **Efficiency:**
-  Aim for an efficient solution. The given constraints indicate that the integer `N` can be as large as 2,147,483,647, so the solution should be able to handle large inputs efficiently.
+  Aim for an efficient solution. The given constraints indicate that 
+  the integer `N` can be as large as 2,147,483,647, so the solution 
+  should be able to handle large inputs efficiently.
 
 - **Test Cases:**
-  Test your solution with various test cases, including cases with multiple binary gaps, no gaps, and the largest possible input.
+  Test your solution with various test cases, 
+  including cases with multiple binary gaps, no gaps, 
+  and the largest possible input.
 
 */
