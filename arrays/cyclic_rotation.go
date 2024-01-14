@@ -50,3 +50,36 @@ each element of array A is an integer within the range [−1,000..1,000].
 Copyright 2009–2024 by Codility Limited. All Rights Reserved.
 Unauthorized copying, publication or disclosure prohibited.
 */
+
+package main
+
+import (
+	"fmt"
+)
+
+func Solution(A []int, K int) []int {
+	N := len(A)
+
+	// Handle the case where the array is empty or K is 0
+	if N == 0 || K == 0 {
+		return A
+	}
+
+	// Adjust K to avoid unnecessary rotations
+	K = K % N
+
+	// Rotate the array by shifting elements to the right K times
+	result := make([]int, N)
+	for i := 0; i < N; i++ {
+		result[(i+K)%N] = A[i]
+	}
+
+	return result
+}
+
+func main() {
+	fmt.Println(Solution([]int{3, 8, 9, 7, 6}, 3)) // Output: [9 7 6 3 8]
+	fmt.Println(Solution([]int{0, 0, 0}, 1))        // Output: [0 0 0]
+	fmt.Println(Solution([]int{1, 2, 3, 4}, 4))      // Output: [1 2 3 4]
+}
+
