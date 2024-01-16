@@ -51,8 +51,6 @@ Copyright 2009–2024 by Codility Limited. All Rights Reserved.
 Unauthorized copying, publication or disclosure prohibited.
 */
 
-package main
-
 import (
 	"fmt"
 )
@@ -79,7 +77,6 @@ func Solution(A []int, K int) []int {
 
 func main() {
 	fmt.Println(Solution([]int{3, 8, 9, 7, 6}, 3)) // Output: [9 7 6 3 8]
-	fmt.Println(Solution([]int{0, 0, 0}, 1))        // Output: [0 0 0]
-	fmt.Println(Solution([]int{1, 2, 3, 4}, 4))      // Output: [1 2 3 4]
+	fmt.Println(Solution([]int{0, 0, 0}, 1))       // Output: [0 0 0]
+	fmt.Println(Solution([]int{1, 2, 3, 4}, 4))    // Output: [1 2 3 4]
 }
-
